@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Song from './components/Song'
 import Player from './components/Player'
 import data from './utils/data'
+import Library from './components/Library'
 
 function App() {
     const [songs, setSongs] = useState(data())
@@ -16,6 +17,7 @@ function App() {
                 isPlaying={isPlaying}
                 setIsPlaying={setIsPlaying}
             />
+            <Library songs={songs} />
         </div>
     )
 }
