@@ -33,7 +33,7 @@ function App() {
     }
 
     return (
-        <div>
+        <div className={`app ${libraryStatus ? 'library-active' : ''}`}>
             <Navbar
                 libraryStatus={libraryStatus}
                 setLibraryStatus={setLibraryStatus}
